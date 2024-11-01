@@ -55,7 +55,7 @@ form.btn.addEventListener("click", (e) => {
   if (user.username === "") {
     alert("Zəhmət olmasa, istifadəçi adınızı yazın!");
   } else {
-    window.location.href = "main.html#game";
+    window.location.href = "index.html#game";
     users.innerHTML = user.username;
   }
 });
