@@ -144,3 +144,36 @@ html{
 .skeleton.left{
    display: none;
 }
+
+/* for responsive styles */
+@media screen and (max-width:1440px) {
+   .game-body_list{
+      flex-wrap: wrap;
+   }
+   .game-bot_img{
+      min-width: 30%;
+   }
+}
+@media screen and (max-width:900px) {
+   .game-section{
+      width: 70%;
+   }
+   .game-btn{
+      height: 200px;
+   }
+   .game-body_head{
+      font-size: 20px;
+   }
+}
+@media screen and (max-width:680px) {
+   .game-time{
+      flex-direction: column;
+      row-gap: 30px;
+   }
+   .game-user{
+      width: 100%;
+   }
+   .game-bot_img{
+      min-width: 40%;
+   }
+}
