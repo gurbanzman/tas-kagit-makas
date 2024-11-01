@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Taş Kağıt Makas</title>
+   <link rel="shortcut icon" href="assets/public/OIP (1).jpg" type="image/x-icon">
+   <link rel="stylesheet" href="assets/icons/style.css">
+   <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+
+<body>
+   <main class="game-main">
+      <section class="game-main_section">
+         <div class="game-section">
+            <form class="game-section_form" id="form">
+               <div class="game-form">
+                  <div class="game-form_content">
+                     <label for="username" class="game-form_title">İstifadəçi adınız</label>
+                     <input type="text" class="game-form_input" name="username"
+                        placeholder="İstifadəçi adınızı daxil edin!">
+                  </div>
+                  <div class="game-form_btn">
+                     <button type="submit" class="btn" name="btn">İrəli</button>
+                  </div>
+               </div>
+            </form>
+         </div>
+         <div class="game-body" id="game">
+            <div class="game-body_section">
+               <div class="game-body_title">
+                  <h1 class="game-body_head">Hörmətli <span>X</span>! kartlardan 1-ni seçin.</h1>
+               </div>
+               <div class="game-body_container">
+                  <ul class="game-body_list" id="chosen">
+                     <li class="game-body_option">
+                        <div class="game-option_content">
+                           <button type="button" class="game-btn">
+                              <img src="assets/public/makas.jpg" alt="makas">
+                           </button>
+                        </div>
+                     </li>
+                     <li class="game-body_option">
+                        <div class="game-option_content">
+                           <button type="button" class="game-btn">
+                              <img src="assets/public/kagit.jpg" alt="kagit">
+                           </button>
+                        </div>
+                     </li>
+                     <li class="game-body_option">
+                        <div class="game-option_content">
+                           <button type="button" class="game-btn">
+                              <img src="assets/public/tas.jpg" alt="tas">
+                           </button>
+                        </div>
+                     </li>
+                  </ul>
+                  VS
+                  <div class="game-body_bot">
+                     <h1 class="game-bot_title">BOT</h1>
+                     <div class="game-bot_img">
+                        <img src="assets/public/Blink Bot.gif" alt="bot">
+                     </div>
+                  </div>
+               </div>
+               <button type="button" class="btn start-btn">Başlamaq üçün Klikləyin</button>
+               <ul class="game-time">
+                  <li class="game-user">
+                     sən: <span class="game-selected" id="user">...</span>
+                  </li>
+                  <li class="game-user">
+                     bot: <span class="game-selected" id="bot">...</span>
+                  </li>
+               </ul>
+               <p class="result">Nəticə: <span id="game-result"></span></p>
+               <p class="timeOut none">3</p>
+            </div>
+
+         </div>
+      </section>
+   </main>
+   <!-- skeleton bot -->
+   <div class="skeleton">
+      <div class="skeleton-section">
+         <img src="assets/public/Blink Bot.gif" alt="skeleton-bot.gif">
+      </div>
+   </div>
+   <script src="assets/js/main.js"></script>
+</body>
+
+</html>
